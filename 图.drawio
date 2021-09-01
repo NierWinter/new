@@ -1,20 +1,17 @@
-<mxfile host="app.diagrams.net" modified="2021-09-01T02:36:18.192Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36" etag="bhgrRkDd_sAbwRjR8g55" version="15.0.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-01T03:06:30.215Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.87 Safari/537.36" etag="MhPVhEIxHp8Za17-2Vux" version="15.0.3" type="github">
   <diagram id="wY2WvxeMVmBYkjKR7pYi" name="Page-1">
-    <mxGraphModel dx="1138" dy="635" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1185" dy="621" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="EiGylN75MUcMy38OjdG9-1" value="&lt;h1&gt;get&lt;/h1&gt;&lt;span style=&quot;color: rgb(51 , 51 , 51) ; font-family: &amp;#34;open sans&amp;#34; , &amp;#34;clear sans&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;通过get请求将对应repo下所属的branch文件夹下的所有数据更新，并返回&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="10" y="310" width="210" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="EiGylN75MUcMy38OjdG9-2" value="&lt;h1&gt;node&lt;/h1&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font&gt;&lt;font color=&quot;#333333&quot; face=&quot;open sans, clear sans, helvetica neue, helvetica, arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;通过node将参数更新至某列表，数据的更新要根据列表执行&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="10" y="60" width="210" height="90" as="geometry" />
+          <mxGeometry x="10" y="80" width="210" height="110" as="geometry" />
         </mxCell>
         <mxCell id="EiGylN75MUcMy38OjdG9-3" value="&lt;h1&gt;clean&lt;/h1&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;font&gt;&lt;font color=&quot;#333333&quot; face=&quot;open sans, clear sans, helvetica neue, helvetica, arial, sans-serif&quot;&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;通过clean请求，将对应repo所属的branch文件夹下所有数据清除，并清除对应的列表数据（后续修改为新建history文件夹来放置需要清除的文件）&lt;/span&gt;&lt;/font&gt;&lt;br&gt;&lt;/font&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="10" y="515" width="210" height="140" as="geometry" />
+          <mxGeometry x="210" y="990" width="210" height="140" as="geometry" />
         </mxCell>
         <mxCell id="EiGylN75MUcMy38OjdG9-4" value="数据库-Branch_table" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-          <mxGeometry x="480" y="103" width="200" height="200" as="geometry" />
+          <mxGeometry x="570" y="80" width="200" height="200" as="geometry" />
         </mxCell>
         <mxCell id="EiGylN75MUcMy38OjdG9-5" value="repo:hk-test&#xa;branch:dev&#xa;ip:172.00.0.1&#xa;port:5002" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="EiGylN75MUcMy38OjdG9-4">
           <mxGeometry y="26" width="200" height="74" as="geometry" />
@@ -22,30 +19,85 @@
         <mxCell id="EiGylN75MUcMy38OjdG9-6" value="repo:hk-test&#xa;branch:dev&#xa;ip:172.00.0.0&#xa;port:5001" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#FF0000;" vertex="1" parent="EiGylN75MUcMy38OjdG9-4">
           <mxGeometry y="100" width="200" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="EiGylN75MUcMy38OjdG9-9" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1">
+        <mxCell id="EiGylN75MUcMy38OjdG9-16" value="" style="endArrow=classic;html=1;fontColor=#FF0000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.008;entryY=0.408;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="EiGylN75MUcMy38OjdG9-1" target="EiGylN75MUcMy38OjdG9-5">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="115" y="149" as="sourcePoint" />
-            <mxPoint x="480" y="236" as="targetPoint" />
+            <mxPoint x="350" y="230" as="sourcePoint" />
+            <mxPoint x="400" y="135" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-17" value="&lt;span style=&quot;color: rgb(119 , 119 , 119) ; font-family: &amp;#34;open sans&amp;#34; , &amp;#34;clear sans&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; text-align: left&quot;&gt;/get?repo=hk-test&lt;/span&gt;&lt;span style=&quot;color: rgb(119 , 119 , 119) ; font-family: &amp;#34;open sans&amp;#34; , &amp;#34;clear sans&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; text-align: left&quot;&gt;&amp;amp;branch=dev&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;" vertex="1" connectable="0" parent="EiGylN75MUcMy38OjdG9-16">
+          <mxGeometry x="-0.1069" y="3" relative="1" as="geometry">
+            <mxPoint y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-20" value="" style="endArrow=classic;html=1;fontColor=#FF0000;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="746" y="280" as="sourcePoint" />
+            <mxPoint x="520" y="331" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="470" y="236" />
-              <mxPoint x="470" y="235" />
-              <mxPoint x="450" y="233" />
-              <mxPoint x="480" y="233" />
-              <mxPoint x="480" y="233" />
-              <mxPoint x="470" y="229" />
-              <mxPoint x="270" y="229" />
+              <mxPoint x="746" y="331" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="EiGylN75MUcMy38OjdG9-10" value="&lt;span style=&quot;color: rgb(119 , 119 , 119) ; font-family: &amp;#34;open sans&amp;#34; , &amp;#34;clear sans&amp;#34; , &amp;#34;helvetica neue&amp;#34; , &amp;#34;helvetica&amp;#34; , &amp;#34;arial&amp;#34; , sans-serif ; text-align: left&quot;&gt;&lt;font style=&quot;font-size: 13px&quot;&gt;/node?repo=hk-test&amp;amp;branch=dev&amp;amp;ip=172.00.0.0&amp;amp;port=5001&lt;/font&gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EiGylN75MUcMy38OjdG9-9">
-          <mxGeometry x="-0.1927" y="2" relative="1" as="geometry">
-            <mxPoint x="-19" y="-28" as="offset" />
+        <mxCell id="EiGylN75MUcMy38OjdG9-22" value="&lt;font color=&quot;#ff3333&quot;&gt;jacoco-Dump命令&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;根据列表信息更新对应文件夹数据&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;" vertex="1" connectable="0" parent="EiGylN75MUcMy38OjdG9-20">
+          <mxGeometry x="0.2905" y="3" relative="1" as="geometry">
+            <mxPoint x="6" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="EiGylN75MUcMy38OjdG9-11" value="写入" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="EiGylN75MUcMy38OjdG9-9">
-          <mxGeometry x="0.7024" y="2" relative="1" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="EiGylN75MUcMy38OjdG9-21" value="dump文件夹" style="swimlane;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="390" y="280" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-23" value="&lt;font color=&quot;#000000&quot;&gt;5001.exec&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#FF0000;" vertex="1" parent="EiGylN75MUcMy38OjdG9-21">
+          <mxGeometry x="30" y="30" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-24" value="&lt;font color=&quot;#000000&quot;&gt;5002.exec&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#FF0000;" vertex="1" parent="EiGylN75MUcMy38OjdG9-21">
+          <mxGeometry x="30" y="60" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-25" value="report文件夹" style="swimlane;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="28" y="280" width="130" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-26" value="&lt;font color=&quot;#000000&quot;&gt;session_1.exec&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#FF0000;" vertex="1" parent="EiGylN75MUcMy38OjdG9-25">
+          <mxGeometry x="15" y="30" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-27" value="&lt;span style=&quot;color: rgb(0 , 0 , 0)&quot;&gt;session_2&lt;/span&gt;&lt;font color=&quot;#000000&quot;&gt;.exec&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#FF0000;" vertex="1" parent="EiGylN75MUcMy38OjdG9-25">
+          <mxGeometry x="15" y="60" width="100" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-28" value="" style="endArrow=classic;html=1;fontColor=#FF0000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="EiGylN75MUcMy38OjdG9-21" target="EiGylN75MUcMy38OjdG9-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="310" as="sourcePoint" />
+            <mxPoint x="400" y="260" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-29" value="&lt;font color=&quot;#ff3333&quot;&gt;jacoco-Dump命令&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;根据文件session_id改名，移动位置&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;" vertex="1" connectable="0" parent="EiGylN75MUcMy38OjdG9-28">
+          <mxGeometry x="0.2509" y="1" relative="1" as="geometry">
+            <mxPoint x="35" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-30" value="download文件夹" style="swimlane;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="28" y="485" width="130" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-31" value="&lt;font color=&quot;#000000&quot;&gt;jacoco.exec&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontColor=#FF0000;" vertex="1" parent="EiGylN75MUcMy38OjdG9-30">
+          <mxGeometry x="25" y="30" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-33" value="" style="endArrow=classic;html=1;fontColor=#FF0000;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="EiGylN75MUcMy38OjdG9-25" target="EiGylN75MUcMy38OjdG9-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="298" y="290" as="sourcePoint" />
+            <mxPoint x="348" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-34" value="&lt;font color=&quot;#ff3333&quot;&gt;jacoco-&lt;span style=&quot;font-size: 11px&quot;&gt;merge&amp;nbsp;&lt;/span&gt;命令&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#000000&quot;&gt;合并report内的所有文件&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontColor=#FF0000;" vertex="1" connectable="0" parent="EiGylN75MUcMy38OjdG9-33">
+          <mxGeometry x="0.2159" y="-1" relative="1" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-36" value="" style="endArrow=classic;html=1;fontColor=#FF0000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="EiGylN75MUcMy38OjdG9-30">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="340" y="290" as="sourcePoint" />
+            <mxPoint x="460" y="518" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EiGylN75MUcMy38OjdG9-37" value="&lt;font color=&quot;#000000&quot;&gt;发送get请求的终端&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontColor=#FF0000;" vertex="1" parent="1">
+          <mxGeometry x="470" y="490" width="30" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
